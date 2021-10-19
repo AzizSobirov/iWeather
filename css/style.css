@@ -1,0 +1,309 @@
+@import url("https://aziz-sobirov.github.io/AS-library/css/as.css");
+#as_navbar h2 {
+  color: #fff;
+}
+
+#as_navbar h2::first-letter {
+  color: #FF8E00;
+}
+
+#as_navbar_bars span {
+  background: #fff;
+}
+
+#app {
+  min-height: 100vh;
+  padding: 0 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app #inApp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #0a0a22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  z-index: 3;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+#app #inApp .services {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  scroll-snap-align: center;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+#app #inApp .services h3 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100%;
+  text-align: right;
+  font-weight: 300;
+}
+
+#app #inApp .services img {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#app #inApp .services .content {
+  position: absolute;
+  padding-top: 10vh;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  height: 170vw;
+  width: 170vw;
+  border-radius: 50%;
+  background: #fff;
+  color: #0a0a22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#app #inApp .services .content h2, #app #inApp .services .content p {
+  width: 50%;
+  text-align: center;
+}
+
+#app #inApp .services .content-btn {
+  margin-top: 25px;
+  height: 100px;
+  width: 100px;
+  background: conic-gradient(#FF4F80, #C23ACC 90deg, #eaebeb 90deg 360deg);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app #inApp .services .content-btn a {
+  height: 70px;
+  width: 70px;
+  color: #fff;
+  background: #484B5B;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+  -webkit-box-shadow: 0 0 0 7.5px #fff;
+          box-shadow: 0 0 0 7.5px #fff;
+}
+
+#app #inApp .services:nth-child(2) .content-btn {
+  background: conic-gradient(#FF4F80, #C23ACC 180deg, #eaebeb 180deg 360deg);
+}
+
+#app #inApp .services:nth-child(3) .content-btn {
+  background: conic-gradient(#FF4F80, #C23ACC 270deg, #eaebeb 270deg 360deg);
+}
+
+#app #inApp .services:nth-child(4) .content-btn {
+  background: conic-gradient(#FF4F80, #C23ACC);
+}
+
+#app #inApp #service4 {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 5vh 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #0a0a22;
+  color: #fff;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+#app #inApp #service4 .app_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#app #inApp #service4 .app_logo img {
+  width: 100%;
+}
+
+#app #inApp #service4 .app_logo h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+#app #inApp #service4 .app_logo h3 {
+  font-weight: 500;
+}
+
+#app #inApp #service4 .app_login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#app #inApp #service4 .app_login input {
+  margin: 20px 0;
+}
+
+#app #inApp #service4 .app_login h4 {
+  margin: 10px 0;
+}
+
+#app #inApp #service4 .app_login #as_btn:not(:last-child) {
+  background: #FF8E00;
+}
+
+#app #inApp #service4 .app_login #as_btn:not(:last-child) a {
+  color: #fff;
+}
+
+#app #inApp #service4 .app_login #as_btn:not(:last-child):hover::before {
+  background: #FFC100;
+}
+
+#app #inApp #service4 .app_login #as_btn:last-child {
+  background: transparent;
+  -webkit-box-shadow: 0 0 0 2px #FF8E00;
+          box-shadow: 0 0 0 2px #FF8E00;
+}
+
+#app #inApp #service4 .app_login #as_btn:last-child a {
+  color: #fff;
+  font-weight: 500;
+}
+
+#app #inApp #service4 .app_login #as_btn:last-child:hover::before {
+  background: #0a0a22;
+}
+
+#app #inApp #service4 .app_login #as_btn:hover::before {
+  -webkit-transform: translate(-50%, -50%) scale(17);
+          transform: translate(-50%, -50%) scale(17);
+}
+
+#app #data {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #0a0a22;
+  color: #fff;
+}
+
+#app #data ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/*# sourceMappingURL=style.css.map */

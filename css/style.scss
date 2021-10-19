@@ -1,0 +1,194 @@
+@import url("https://aziz-sobirov.github.io/AS-library/css/as.css");
+
+$mc : #05abcc;
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#as_navbar{
+    h2{
+        color: #fff;
+        &::first-letter{
+            color: #FF8E00;
+        }
+    }
+    &_bars span{
+        background: #fff;
+    }
+}
+
+#app{
+    min-height: 100vh;
+    padding: 0 5vw;
+    @include flexbox;
+    #inApp{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background: #0a0a22;
+        @include flexbox;
+        justify-content: flex-start;
+        z-index: 3;
+        overflow-x: scroll;
+        scroll-snap-type:x mandatory;
+        .services{
+            position: relative;
+            min-height: 100vh;
+            min-width: 100vw;
+            scroll-snap-align: center;
+            color: #ffffff;
+            overflow: hidden;
+            h3{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 100%;
+                text-align: right;
+                font-weight: 300;
+            }
+            img{
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                width: auto;
+                transform: translate(-50%,-50%);
+            }
+            .content{
+                position: absolute;
+                padding-top:10vh;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%,50%);
+                height: 170vw;
+                width: 170vw;
+                border-radius: 50%;
+                background: #fff;
+                color: #0a0a22;
+                @include flexbox();
+                justify-content: flex-start;
+                flex-direction: column;
+                h2,p{
+                    width: 50%;
+                    text-align: center;
+                }
+                &-btn{
+                    margin-top: 25px;
+                    height: 100px;
+                    width: 100px;
+                    background: conic-gradient(
+                        #FF4F80,
+                        #C23ACC 90deg,
+                        #eaebeb 90deg 360deg
+                        );
+                    border-radius: 50%;
+                    @include flexbox();
+                    a{
+                        height: 70px;
+                        width: 70px;
+                        color: #fff;
+                        background: #484B5B;
+                        border-radius: 50%;
+                        @include flexbox();
+                        font-size: 1.5em;
+                        box-shadow: 0 0 0 7.5px #fff;
+                    }
+                }
+            }
+            &:nth-child(2) .content-btn{
+                background: conic-gradient(
+                    #FF4F80,
+                    #C23ACC 180deg,
+                    #eaebeb 180deg 360deg
+                );
+            }
+            &:nth-child(3) .content-btn{
+                background: conic-gradient(
+                    #FF4F80,
+                    #C23ACC 270deg,
+                    #eaebeb 270deg 360deg
+                );
+            }
+            &:nth-child(4) .content-btn{
+                background: conic-gradient(#FF4F80 ,#C23ACC);
+            }
+        }
+        #service4{
+            min-height: 100vh;
+            min-width: 100vw;
+            padding: 5vh 5vw;
+            @include flexbox();
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: #0a0a22;
+            color: #fff;
+            scroll-snap-align: center;
+            overflow: hidden;
+            .app_logo{
+                @include flexbox();
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+                h2{
+                    font-size: 2.5em;
+                    font-weight: 600
+                }
+                h3{
+                    font-weight: 500;
+                }
+            }
+            .app_login{
+                @include flexbox();
+                flex-direction: column;
+                input{
+                    margin: 20px 0;
+                }
+                h4{
+                    margin: 10px 0;
+                }
+                #as_btn:not(:last-child){
+                    background: #FF8E00;
+                    a{color: #fff;}
+                    &:hover::before{
+                        background: #FFC100;
+                    }
+                }
+                #as_btn:last-child{
+                    background: transparent;
+                    box-shadow: 0 0 0 2px #FF8E00;
+                    a{
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                    &:hover::before{
+                        background: #0a0a22;
+                    }
+                }
+                #as_btn:hover::before{
+                    transform:translate(-50%,-50%) scale(17);
+                }
+            }
+        }
+    }
+
+    // .services{display: none;}
+
+    #data{
+        min-height: 100vh;
+        min-width: 100vw;
+        padding: 0 5vw;
+        @include flexbox;
+        flex-direction: column;
+        background: #0a0a22;
+        color: #fff;
+        ul{
+            li{
+                @include flexbox();
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
